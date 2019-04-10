@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="652" lt="648" ts="1504630168735" s="true" lb="View home page" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="2157" ng="1" na="1"/>
+<httpSample t="65" lt="61" ts="1504630172431" s="true" lb="250 /Home/GetUpcomingSalesSection" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3382" ng="1" na="1"/>
+<sample t="717" lt="709" ts="1504630164130" s="true" lb="Step 1: Home Page" rc="200" rm="Number of samples in transaction : 2, number of failing samples : 0" tn="Thread Group 1-1" dt="" by="5539" ng="1" na="1"/>
+<httpSample t="103" lt="91" ts="1504630175503" s="true" lb="252 /Bids/UpcomingSales" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="4684" ng="1" na="1"/>
+<sample t="104" lt="91" ts="1504630172498" s="true" lb="Step 2 /Bids/UpcomingSales" rc="200" rm="Number of samples in transaction : 1, number of failing samples : 0" tn="Thread Group 1-1" dt="" by="4684" ng="1" na="1"/>
+<httpSample t="260" lt="222" ts="1504630178610" s="true" lb="Get Mock Cattle Auction page" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="32517" ng="1" na="1"/>
+<httpSample t="52" lt="51" ts="1504630181872" s="true" lb="254 /signalr/hubs" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="4401" ng="1" na="1"/>
+<httpSample t="24" lt="24" ts="1504630184929" s="true" lb="256 /signalr/negotiate connection" rc="200" rm="OK" tn="Thread Group 1-1" dt="" by="282" ng="1" na="1"/>
+<sample t="349" lt="297" ts="1504630175609" s="true" lb="Step 3: Mock Cattle Auction" rc="200" rm="Number of samples in transaction : 3, number of failing samples : 0" tn="Thread Group 1-1" dt="" by="37200" ng="1" na="1"/>
+<httpSample t="20" lt="20" ts="1504630187968" s="true" lb="257 /signalr/connect" rc="200" rm="OK" tn="Thread Group 1-1" dt="" by="282" ng="1" na="1"/>
+<httpSample t="23" lt="23" ts="1504630190990" s="true" lb="258 /signalr/connect" rc="200" rm="OK" tn="Thread Group 1-1" dt="" by="282" ng="1" na="1"/>
+<httpSample t="21" lt="21" ts="1504630194016" s="true" lb="307 /signalr/poll" rc="200" rm="OK" tn="Thread Group 1-1" dt="" by="282" ng="1" na="1"/>
+<sample t="66" lt="64" ts="1504630184966" s="true" lb="257 /signalr/connect" rc="200" rm="Number of samples in transaction : 3, number of failing samples : 0" tn="Thread Group 1-1" dt="" by="846" ng="1" na="1"/>
+<httpSample t="97" lt="88" ts="1504630197039" s="true" lb="265 /Bids/AuctionDetails/9066" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="10522" ng="1" na="1"/>
+<httpSample t="28" lt="28" ts="1504630200138" s="true" lb="266 / Aborts previous connection" rc="200" rm="OK" tn="Thread Group 1-1" dt="" by="282" ng="1" na="1"/>
+<httpSample t="22" lt="22" ts="1504630203168" s="true" lb="267 /signalr/hubs" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="4401" ng="1" na="1"/>
+<httpSample t="18" lt="18" ts="1504630206192" s="true" lb="268 /signalr/negotiate new connection" rc="200" rm="OK" tn="Thread Group 1-1" dt="" by="282" ng="1" na="1"/>
+<sample t="167" lt="156" ts="1504630194038" s="true" lb="Step 4:  Lot #1: Miss Make a Wish" rc="200" rm="Number of samples in transaction : 4, number of failing samples : 0" tn="Thread Group 1-1" dt="" by="15487" ng="1" na="1"/>
+<httpSample t="19" lt="19" ts="1504630209214" s="true" lb="269 /signalr/connect" rc="200" rm="OK" tn="Thread Group 1-1" dt="" by="282" ng="1" na="1"/>
+<httpSample t="22" lt="22" ts="1504630212235" s="true" lb="270 /signalr/connect" rc="200" rm="OK" tn="Thread Group 1-1" dt="" by="282" ng="1" na="1"/>
+<sample t="42" lt="41" ts="1504630206212" s="true" lb="269 /signalr/connect" rc="200" rm="Number of samples in transaction : 2, number of failing samples : 0" tn="Thread Group 1-1" dt="" by="564" ng="1" na="1"/>
+<httpSample t="44" lt="44" ts="1504630215260" s="true" lb="Step 5: More photos" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="382" ng="1" na="1"/>
+<httpSample t="42" lt="41" ts="1504630218305" s="true" lb="273 /Bids/GetLotGallery" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="1116" ng="1" na="1"/>
+<httpSample t="34" lt="33" ts="1504630221347" s="true" lb="Step 6: Close Gallery" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="2083" ng="1" na="1"/>
+<sample t="121" lt="118" ts="1504630212259" s="true" lb="Step 5: View photos" rc="200" rm="Number of samples in transaction : 3, number of failing samples : 0" tn="Thread Group 1-1" dt="" by="3581" ng="1" na="1"/>
+<httpSample t="20" lt="20" ts="1504630224384" s="true" lb="271 /signalr/poll" rc="200" rm="OK" tn="Thread Group 1-1" dt="" by="282" ng="1" na="1"/>
+<httpSample t="215" lt="199" ts="1504630227405" s="true" lb="278  Back to Mock Cattle Auction" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="32517" ng="1" na="1"/>
+<httpSample t="18" lt="18" ts="1504630230624" s="true" lb="279 / Aborts previous connection" rc="200" rm="OK" tn="Thread Group 1-1" dt="" by="282" ng="1" na="1"/>
+<httpSample t="24" lt="24" ts="1504630233644" s="true" lb="280 /signalr/hubs" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="4401" ng="1" na="1"/>
+<httpSample t="20" lt="20" ts="1504630236670" s="true" lb="281 /signalr/negotiate new connection" rc="200" rm="OK" tn="Thread Group 1-1" dt="" by="282" ng="1" na="1"/>
+<sample t="298" lt="281" ts="1504630221383" s="true" lb="Step 7: Click on Back to Sale" rc="200" rm="Number of samples in transaction : 5, number of failing samples : 0" tn="Thread Group 1-1" dt="" by="37764" ng="1" na="1"/>
+<httpSample t="21" lt="21" ts="1504630239692" s="true" lb="282 /signalr/connect" rc="200" rm="OK" tn="Thread Group 1-1" dt="" by="282" ng="1" na="1"/>
+<httpSample t="19" lt="19" ts="1504630242716" s="true" lb="283 /signalr/connect" rc="200" rm="OK" tn="Thread Group 1-1" dt="" by="282" ng="1" na="1"/>
+<sample t="4" lt="0" ts="1504630245829" s="true" lb="Debug Sampler" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="303" ng="1" na="1"/>
+<sample t="44" lt="40" ts="1504630236691" s="true" lb="282 /signalr/connect" rc="200" rm="Number of samples in transaction : 3, number of failing samples : 0" tn="Thread Group 1-1" dt="" by="867" ng="1" na="1"/>
+<httpSample t="21" lt="21" ts="1504630248835" s="true" lb="284 /signalr/poll" rc="200" rm="OK" tn="Thread Group 1-1" dt="" by="282" ng="1" na="1"/>
+<httpSample t="124" lt="120" ts="1504630251857" s="true" lb="286 /Bids/AuctionDetails/9068" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="10518" ng="1" na="1"/>
+<httpSample t="21" lt="21" ts="1504630254982" s="true" lb="287 /Abort previous connection" rc="200" rm="OK" tn="Thread Group 1-1" dt="" by="282" ng="1" na="1"/>
+<httpSample t="20" lt="20" ts="1504630258005" s="true" lb="288 /signalr/hubs" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="4401" ng="1" na="1"/>
+<httpSample t="17" lt="17" ts="1504630261026" s="true" lb="289 /signalr/negotiate new connection" rc="200" rm="OK" tn="Thread Group 1-1" dt="" by="282" ng="1" na="1"/>
+<sample t="205" lt="199" ts="1504630245834" s="true" lb="step 8: Lot #3: Miss Looking up" rc="200" rm="Number of samples in transaction : 5, number of failing samples : 0" tn="Thread Group 1-1" dt="" by="15765" ng="1" na="1"/>
+<httpSample t="25" lt="25" ts="1504630264046" s="true" lb="290 /signalr/connect" rc="200" rm="OK" tn="Thread Group 1-1" dt="" by="282" ng="1" na="1"/>
+<httpSample t="18" lt="18" ts="1504630267074" s="true" lb="291 /signalr/connect" rc="200" rm="OK" tn="Thread Group 1-1" dt="" by="282" ng="1" na="1"/>
+<sample t="43" lt="43" ts="1504630261044" s="true" lb="290 /signalr/connect" rc="200" rm="Number of samples in transaction : 2, number of failing samples : 0" tn="Thread Group 1-1" dt="" by="564" ng="1" na="1"/>
+<httpSample t="229" lt="203" ts="1504630270095" s="true" lb="301 /Bids/AuctionsListing/7044" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="32515" ng="1" na="1"/>
+<httpSample t="19" lt="19" ts="1504630273325" s="true" lb="302 / Abort previous connection" rc="200" rm="OK" tn="Thread Group 1-1" dt="" by="282" ng="1" na="1"/>
+<httpSample t="23" lt="23" ts="1504630276345" s="true" lb="303 /signalr/hubs" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="4401" ng="1" na="1"/>
+<httpSample t="19" lt="19" ts="1504630279371" s="true" lb="304 /signalr/negotiate new connection" rc="200" rm="OK" tn="Thread Group 1-1" dt="" by="282" ng="1" na="1"/>
+<sample t="292" lt="264" ts="1504630267093" s="true" lb="Step 9: Back to sale" rc="200" rm="Number of samples in transaction : 4, number of failing samples : 0" tn="Thread Group 1-1" dt="" by="37480" ng="1" na="1"/>
+<httpSample t="19" lt="19" ts="1504630282392" s="true" lb="305 /signalr/connect" rc="200" rm="OK" tn="Thread Group 1-1" dt="" by="282" ng="1" na="1"/>
+<httpSample t="18" lt="18" ts="1504630285412" s="true" lb="306 /signalr/connect" rc="200" rm="OK" tn="Thread Group 1-1" dt="" by="282" ng="1" na="1"/>
+<httpSample t="19" lt="19" ts="1504630288432" s="true" lb="307 /signalr/poll" rc="200" rm="OK" tn="Thread Group 1-1" dt="" by="282" ng="1" na="1"/>
+<sample t="57" lt="56" ts="1504630279391" s="true" lb="305 /signalr/connect" rc="200" rm="Number of samples in transaction : 3, number of failing samples : 0" tn="Thread Group 1-1" dt="" by="846" ng="1" na="1"/>
+<httpSample t="19" lt="19" ts="1504630291453" s="true" lb="307 /signalr/poll" rc="200" rm="OK" tn="Thread Group 1-1" dt="" by="282" ng="1" na="1"/>
+<httpSample t="82" lt="77" ts="1504630294473" s="true" lb="310 /Bids/AuctionDetails/9070" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="10494" ng="1" na="1"/>
+<httpSample t="23" lt="23" ts="1504630297557" s="true" lb="311 /Abort previous connection" rc="200" rm="OK" tn="Thread Group 1-1" dt="" by="282" ng="1" na="1"/>
+<httpSample t="21" lt="21" ts="1504630300582" s="true" lb="312 /signalr/hubs" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="4401" ng="1" na="1"/>
+<httpSample t="18" lt="18" ts="1504630303604" s="true" lb="313 /signalr/negotiate new connection" rc="200" rm="OK" tn="Thread Group 1-1" dt="" by="282" ng="1" na="1"/>
+<sample t="164" lt="158" ts="1504630288452" s="true" lb="Step 10: Lot #5 BK Wonder Woman" rc="200" rm="Number of samples in transaction : 5, number of failing samples : 0" tn="Thread Group 1-1" dt="" by="15741" ng="1" na="1"/>
+<httpSample t="18" lt="18" ts="1504630306624" s="true" lb="314 /signalr/connect" rc="200" rm="OK" tn="Thread Group 1-1" dt="" by="282" ng="1" na="1"/>
+<httpSample t="18" lt="18" ts="1504630309643" s="true" lb="315 /signalr/connect" rc="200" rm="OK" tn="Thread Group 1-1" dt="" by="282" ng="1" na="1"/>
+<sample t="37" lt="36" ts="1504630303624" s="true" lb="314 /signalr/connect" rc="200" rm="Number of samples in transaction : 2, number of failing samples : 0" tn="Thread Group 1-1" dt="" by="564" ng="1" na="1"/>
+
+</testResults>

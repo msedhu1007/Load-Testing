@@ -1,0 +1,31 @@
+Thread
+  time: 20170905T124928-0400 - 20170905T125143-0400
+  total duration:       146
+  requests:             62
+  requests per second:  0
+  response duration (ms)
+    min:                4
+    average:            86
+    max:                717
+    standard deviation: 135
+    quantiles (ms)
+         10%       18
+         20%       19
+         30%       20
+         40%       21
+         50%       24
+         60%       42
+         70%       57
+         80%      104
+         90%      215
+         99%      652
+       99.9%      652
+      100.0%      717 (max. value)
+  response size (bytes)
+    total:              354984
+    min:                282
+    average:            5725
+    max:                37764
+    standard deviation: 10358
+  response status codes
+    200:                  62 (100%)

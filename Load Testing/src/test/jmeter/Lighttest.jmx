@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="3.2" jmeter="3.2 r1790748">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Lighttest" enabled="true">
+      <stringProp name="TestPlan.comments">This test plan was created by the BlazeMeter JSON to JMX convertor V.1.5.263. Please contact support@blazemeter.com for further support.</stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager" enabled="true">
+        <collectionProp name="AuthManager.auth_list"/>
+      </AuthManager>
+      <hashTree/>
+      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+        <collectionProp name="CookieManager.cookies"/>
+        <boolProp name="CookieManager.clearEachIteration">true</boolProp>
+        <stringProp name="CookieManager.implementation">org.apache.jmeter.protocol.http.control.HC4CookieHandler</stringProp>
+      </CookieManager>
+      <hashTree/>
+      <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager" enabled="true">
+        <boolProp name="clearEachIteration">true</boolProp>
+        <boolProp name="useExpires">false</boolProp>
+      </CacheManager>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">2</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">2</stringProp>
+        <longProp name="ThreadGroup.start_time">1363247040000</longProp>
+        <longProp name="ThreadGroup.end_time">1363247040000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration">0</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://teamstage.myiuhealth.org/news/2017/08/ahaus-to-retire-walke-to-assume-expanded-role" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">teamstage.myiuhealth.org</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">news/2017/08/ahaus-to-retire-walke-to-assume-expanded-role</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.image_parser">true</boolProp>
+          <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
+          <stringProp name="HTTPSampler.concurrentPool">2</stringProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
+                <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="DNT" elementType="Header">
+                <stringProp name="Header.name">DNT</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://teamstage.myiuhealth.org/</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+            <stringProp name="RandomTimer.range">0.0</stringProp>
+            <stringProp name="ConstantTimer.delay">0.0</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://teamstage.myiuhealth.org/SAML/SingleSignOn?req=%2fnews%2f2017%2f08%2fahaus-to-retire-walke-to-assume-expanded-role" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="req" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">req</stringProp>
+                <stringProp name="Argument.value">%2fnews%2f2017%2f08%2fahaus-to-retire-walke-to-assume-expanded-role</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">teamstage.myiuhealth.org</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">SAML/SingleSignOn</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.image_parser">true</boolProp>
+          <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
+          <stringProp name="HTTPSampler.concurrentPool">2</stringProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
+                <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="DNT" elementType="Header">
+                <stringProp name="Header.name">DNT</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://teamstage.myiuhealth.org/news/2017/08/ahaus-to-retire-walke-to-assume-expanded-role</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+            <stringProp name="RandomTimer.range">2298.0</stringProp>
+            <stringProp name="ConstantTimer.delay">4596.0</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://teamstage.myiuhealth.org/SAML/AssertionConsumerService" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="SAMLResponse" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">SAMLResponse</stringProp>
+                <stringProp name="Argument.value">PHNhbWxwOlJlc3BvbnNlIElEPSJfOTgzNjVkNTYtNWY5Mi00ZjJiLTg4ODEtZjQ5MjM3ODg3NWI0IiBWZXJzaW9uPSIyLjAiIElzc3VlSW5zdGFudD0iMjAxNy0wOC0zMVQxOTowOTo0OS4yMDhaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly90ZWFtc3RhZ2UubXlpdWhlYWx0aC5vcmcvU0FNTC9Bc3NlcnRpb25Db25zdW1lclNlcnZpY2UiIENvbnNlbnQ9InVybjpvYXNpczpuYW1lczp0YzpTQU1MOjIuMDpjb25zZW50OnVuc3BlY2lmaWVkIiB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48SXNzdWVyIHhtbG5zPSJ1cm46b2FzaXM6bmFtZXM6dGM6U0FNTDoyLjA6YXNzZXJ0aW9uIj5odHRwOi8vc3RzLml1aGVhbHRoLm9yZy9hZGZzL3NlcnZpY2VzL3RydXN0PC9Jc3N1ZXI+PHNhbWxwOlN0YXR1cz48c2FtbHA6U3RhdHVzQ29kZSBWYWx1ZT0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnN0YXR1czpTdWNjZXNzIiAvPjwvc2FtbHA6U3RhdHVzPjxFbmNyeXB0ZWRBc3NlcnRpb24geG1sbnM9InVybjpvYXNpczpuYW1lczp0YzpTQU1MOjIuMDphc3NlcnRpb24iPjx4ZW5jOkVuY3J5cHRlZERhdGEgVHlwZT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS8wNC94bWxlbmMjRWxlbWVudCIgeG1sbnM6eGVuYz0iaHR0cDovL3d3dy53My5vcmcvMjAwMS8wNC94bWxlbmMjIj48eGVuYzpFbmNyeXB0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS8wNC94bWxlbmMjYWVzMjU2LWNiYyIgLz48S2V5SW5mbyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyI+PGU6RW5jcnlwdGVkS2V5IHhtbG5zOmU9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMDQveG1sZW5jIyI+PGU6RW5jcnlwdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMDQveG1sZW5jI3JzYS1vYWVwLW1nZjFwIj48RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3NoYTEiIC8+PC9lOkVuY3J5cHRpb25NZXRob2Q+PEtleUluZm8+PGRzOlg1MDlEYXRhIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6WDUwOUlzc3VlclNlcmlhbD48ZHM6WDUwOUlzc3Vlck5hbWU+Q049dGhhd3RlIFNIQTI1NiBTU0wgQ0EsIE89InRoYXd0ZSwgSW5jLiIsIEM9VVM8L2RzOlg1MDlJc3N1ZXJOYW1lPjxkczpYNTA5U2VyaWFsTnVtYmVyPjc2MjQxMjI2MTQwNzYwMzE1MTA4ODA2NTc4Nzg3MzE4NTA1MTA3PC9kczpYNTA5U2VyaWFsTnVtYmVyPjwvZHM6WDUwOUlzc3VlclNlcmlhbD48L2RzOlg1MDlEYXRhPjwvS2V5SW5mbz48ZTpDaXBoZXJEYXRhPjxlOkNpcGhlclZhbHVlPlVXNEROUHh2YXRkVkdwdWhqZmRKTXlrNTNRc3ZPMUd0MkI0Nkp1eUtlM2tSN3dqY0ozQlNwUTB3UWRBOG1QN3ZOc2dNQnVlbWJhcHZkSHpwUnRrNkVFckhxdnhZMkRZWWN1VTVSLzUvRG5zbUQwRjQyTmZTK2hrR1g0ZWQ3ZHg2bkVBUmIvTFQvQ29HQXRCUmJBODNqbVlwQkZDajc0SmpnUHNXSVZuTXY5S3BRdi95eW8xVG0xTzVwU25OekxEcUs0MzVGdUtiNFd5aG9SMGZxdStCSU5UUm01WTlrU0FmRUFWZ2NGUnVaSGVCY3drdDRWemNPaTh3Z0p4NzZJaWp3T0lXQ2Qxd1VIYkFqYkxFUjNXN1lEQU9KZENOMkxhc1lBZ2tNR3VjbWt5U2tOWGNaUzZCMUF5bmxMcUtsTkJqeWZ6ekJaNTBrS3JXWXpyZDB0alBmZz09PC9lOkNpcGhlclZhbHVlPjwvZTpDaXBoZXJEYXRhPjwvZTpFbmNyeXB0ZWRLZXk+PC9LZXlJbmZvPjx4ZW5jOkNpcGhlckRhdGE+PHhlbmM6Q2lwaGVyVmFsdWU+N0tRUCsxZ2M2dWlHakhkdVVBSzRuWiszQm5wejV3OWZ5Skt5Y2FPdFh6ZGtqSEF4aXNOZWgvSnpWMVljeHc1WHhiWEdOY2VRWTg1VTJEZ3NRS1QvM0dBMmUwbGZHSXBBMFpHN29DL2FzbFBCTVZsdENleGRvc1JtM2NtQXNzMjl3dm03QXMrS2t1Y251dkVtQVNzaW16U2JGRXpZc1hwSVN3cm4rcGIrc3lta3Y4Q1JYSlZtWEo2MkVXL094T00rZjk5WW41bmNQazUxR054blg5ZE91cmx6NEFLLytwUERDQlQxYmp5MzQ1dDE2MDhpM2Y4b0pXZHI0ekxEblYwdHEyUmsrN1RMQTJPTFYvTUdZZWl6OU1YMUNDU0M3RG9Tdm15Y0VGMUNNWnZWcG90REc2VE8ycGthd1hKQ2xwY25MenkwejBzVDh6SGxQOWNjYm1aRXVMc0lOTHdrN0tvS2luWS9LdlFDQm1WWlNqSVU5SzFuZVo5bmZKYVhYc2hORDY5SXYvVGR5QnNvcE10R1J6TTZLR3N0VjJlR0tTYnMxNGR0K3ErTmtUOUF6b0pqSjM5NTc4d052Q3lOS05BY1lhM1M0ckdJVzhWTERvaEc4aDcwQ0RNaTNzQ3Uza04xR3NFT3VEemxSRFczNnUvS1JheTJqNnNsRTZLUElVenZVbDJlM3JybU05RTZtR1ZtN3AwVFpyOExjR3FKamFqSEtWclFSQmlac1pZYzVnQmZkSGsrK3dRdE1LL09UaERXL1JwYSt5d1NzY0ZmQWNwcmM2ZC93SWt6VUsyVVArQ0RnK3dEMzBKbTI4blRPYkpoWW5XQjlhMFlUU0VMNHVyODF0S2g1c1AyQ0pGR1UvbEF0eE5LbEZLU3ZHRTJOMnZyc25iWmRRbko2Q0NpOHJ2WE5oQXFib3Z4K1hPRk13dDNwUG5hMjJEcGZ2WmRxTk04ZktLaVVPTlFXazk2L29wWm05cW16alpmK2FONTV3MUdBSXlmS1RLU1pWYS94Q1dmMXJRWVhyYS9ZNEtFS3VoV2NoYlpka1V4RUVveXpsTXZOZE45S0p2b1JKZWhReVFtek9CcUdYWTFBWXJZSmNyK0tFb0crdTI4R1Z2WkxrTVJwSXh5aWg5WDdJbW4reGV1QmN6QUhhWEdmZ0dwOWhaOTJUK0wzWnQ0UEFod2RNVE5ONjRZbjdpK2cveDRxNGY4dWQvZ0FONHlHcXJWaGpxV2lUUm55Q3FaaHRuNHJ6YkpBbElHQmViYmlJM3kvRk5idUlPSjUzSWZ4ZHFxZHN1WlpvN0lQL2tEdXo4OVR6ZDNZN05PQTVVeVg4a1Z4SVRKN1VkS0V0RmowMmYxN1ROWFFoV241VHNoRUxRUmp0RlFaUENORVc5d3o0N1lJQTJIVVk1elZWK3ZLMjJxZzhxMzlwaFhvdDhYVVlsRW83UjZXUGFmZHpKWmlxdTBrZkZabVFBcUowak4vbFVpbHY3aWIvRnp5aW5VL3R1RjEwU25KZCs0aTZPSUxKLytLaDhaOHBDb2htdEZRM1IzYnpJSTVnTW8rakVCQTdKMXY3QjhRVWoxKzBhZHlKQ0J4OHdOQng2SDhNSUtGNWU4UXc2Njg0YlZSekE3dzV6SjJMalVqaGh6MHZFT0FLZXlOQ2U2azZkN1UvUkplaDNLL1hTKzNFMnpnN2NHK0VMazJXUE5QYzc4YmtlYnhsaVlyL1gwREQ5WGwyRlZkMFJIakc1RTlSajVEbHE2cU5aKzBreVJwOEcrUFJnRlFVc3hnczY1eDJLcEpqRzN2YWxXSVhqaEY2VWpzZTBnejR1aXhaRW93WnpQcDQxU3VMVThmN3BQYlVmZmFmNlROZ1JMRG84bWk2bjBhNGJXbU8rTUZJQnl0MnpLWlVLZDJUeGhoY3pJakFMSm02d29Hb3J4NnRhMEJWdWtTZEp5YzU2K2tYM3loR0Z3NmYwaHJmQW9jajlIWHN1RlJqcFFpWmcvSW80QVZXYy9aL1hEUnFJeEJrWlM3OHVyRU9JZ1hTWStRMFljamN2MHd4UXFQOERmUVlnWml5M1hyWGdrcEdObzNPUGpqY3ZEYWVqY21xTXhyS0pQM3BPd2ZkcVVZWjU0WFFzbDUxdGVxclRaL2pHM1d2cTNsM2RERU05bzBibkFUWUlOZmlHdGc0VHAvckh2NnhDVXZidkJUQjNsQkZhWVlCOUdkM3lxaXFCUFdsR0tlbzVCdUFhU3duYWtpenpkWHh4V3VjRzJLcTlEdWtpaHZJTlFMYUZvTFdOb2QweDVwVnVHc1VaVkJ2bjhOR25HdDgwVi93cG9kdkpWVVVWZHlTYzcyY3NvaWVQajhIVU1iSmdzaEVaYWNqTzlUVGFndTliVi9XVGV0bTZKdHlsUURSVFFyUlA4a2ZsaCsydjlUZGNtM3d2dnlYQnhlVWw5NG4zVmlWUURmalJ6MzNkVE0xQWd3bWoyZEdGZmNsZzl3MGtsS0ZTcjZZcDBsV2tuQWplWjhzUFdxYk5hQkkwT3kvYjhBN2xkYTF2aUJPMzBudGFuYzNOU2FaRGpoTG5oSGYxYnJ5R3o1ZHpqM1lCSmlqWkhHOE5JRzBhRjQ0QUhmYXpvWnBPaFZ4VzYyQ3dYNzlHaGd4Z1JuNnFKU0M1c2RLSE05blZWZm8zOHFYdjE4Q3J5N0podzkvZ05sY1FXVlVmQUlmMElMMEs3MklDSktKbFhjUUt0WjhScUZYQ2FTQmVDL0lQdXFpOFNqbzgvYTlBdUI2Slc4OGxFMFhDUVdxK1pIV2Vmbk0zaDJrWmlOQUhseDd2Qm5iZUt6M25lWVdMaVIzbTI5Uk5IdjJtNlhpbXA0V3ZPYnBEbitsbGwvU2U3eGxKbTBuNUVqenYyTHJieFkvTFZGcHhKSzB5OUdVZkNwSXVncCt4MHZ5MGpDZ3RhWG9mTVA0TWRET08xUXhseXFlUHFzS2dDZ3JjVnh0L3gvS3VFWnJLVlVOTUtZUlV3RjlsdGQrVEZldlZRVndvOUZvaEJOVHpUVmtmK1RsMDY2cHE2WGZKbk9xc1R2SGVoUDNIdE1pem5RUkdqUGI1cS9MUUpORGNoS2VuNU1FZUJYOWdNSEdnQTlvL054N3hISG1DelpFMFQ2T1psakNOOWFBVU1NVnJGWmpZTXJDNjFzbzVDQSs3T1g4aGhXZ0R4eFM3SDdQR1hEaFZLb2hNKzdBdVNvQmxDMU5wRWp3SHJYNzAzZnVFZjEya0dzb3dBMWZleDlRU3FqNmdnbDdpdmZkeTV6WVBHT0Y0M3loLzY2UzU2bDV0eWRMT2dIMjZxSFppUTNjVHVzNllRMy85bGVvQzJLOXhFRHp2MUt4OUhsaVR1ZFpKZzY4eGkyd2NmOVY5UTgrTGtsNkU2UWVuUmJJSmdZS2xVNDA0K3NsV045dWRsdnprRlN3MytjNEt4RGF3dnRBSWlmZ1VWeHJZTmoxekJtc3pXMjdIZnU4T3ZVeWVLS3o2cFVYT1BSVjI5MkM5eWM1dnloblZNRWZ3a2NOUVlCbk1CU0JzbC9uWFdvZ2IrckV6MVhJNVR4UXl3VVdFQWhMSExRejJ0VWxQdHg5Z05Fbld2QjRackZSQVZFK1NBR3lLbjN1TC93OGgzUFZvWTZkNGNJaktkZU96Y20zVndxbTdtYXg3WEsyRVRFNlBDa1JkRlZMY05kTEVYbDhlVkNWZEpNNWlLZHJZQnRGOG5lZ1ZlNm1ZdUxrVUlyRlZSeFRMd0VraW1HRGJmelhhMXB3VW1pSmMvYWlRSWppOGhONFpBWEJTSE1kVkt2QTF0dWRzV3RoNWdScWxsRDF0d1lVbmNhVGwwQ3NNRGRURThOZHdzbkMzcmhMSmFsRXhGUlF2cG1peHRVY1hOWml5VmZvckhZWHNIZkxhUUVVU0hsWGUrR0F2NXFveSt5djFDNHRWaFNNRzk2RzNuRWJNVVJTK0tTNUJCT3N3c3FhWXBQdm5iR0NUSWF1YTZOclpxUGR6L3c2UFNOaXBwLzlPSlhxTTJOK0FZcmR4bWYvd2lkOU9YQjNjemxZbXJOYjVOSkszd1FGNElzU0JnUXJHcUNHclkxQ1NiV1ZaTXl2NmJDdHB3aVArcnBHOG1KUytvT1orcXMwQnVRaTBiSVdHQm9jdXZwQmNVUWpqc2NNaWlJUG0wbzhCWk5ubFY2ZVBHUmI3UDlqazExeGpvdjdXUS9rdFZIVzFzL1FVVWFNVXM4TFBtY0lNTjJOdXZoRExwdGttSHVPQzdxVDcwdWhqM3F1Wm1Wem9GRnA1ZHJxTXNyUUFzeGJ4NkpzT0FDNUwvb0xPT0ltcGl6dHJMeHVnZUtuTUpuRWdJZk1yTnh6Q0FCYVR1UkhFUUhKVCt5K3hJallwQWFINnVQMmZFZW1Sd012WnNBREpyeEk2aGYrWGVURUVDT0d4dWltVkdETWNVbkJCaFRpRDZTUlZTb3daM2ZWRmdSSmJxSmQ3VWtsb1NMZkFTQnpPQnpQT0JXN2dhajQzMllEekNXS21CT1JlNGpUdE44ZVoyb3d1WVNpRkRnc3RvelFucDJ6NkllNWJMREpTV1VLZDBkcWtqTzVHTVdoRkFFZmJiWWhHcW5La0h3dGR3VUNCQWJyb09wWDF5MzUxT3k3dFRNNjhsaEluYzFINWM1bHB4QVllaUJKWXk5UTJoZzRvanNJQjlCSjJxejJzZDZMWGR2cFhpUjROTVJ0M3V0dWFuZHZPUHJKVmNUbENGdFF1Y3pnRTk5U2VENTk5RWhCWGJJUHhaaFJ6UXl5aWZpaWRsUWNRVjVsMGR2WTJTdnVGNXF4N0d0UUlRSlFORjB4a1NYNDgyK2kydlFEOVgrbzRMelNCcE1aRGVWMlFRQ21FQVZQbTl1U01ucnF1bTk3SGRvVHhzN2liRTdDLzZpZnlnN3hDV01ObDkxZlptRTlINlhrOXBSV2xuV2p6OUgyY2toMGZSMmNQMzRDRk9kSWFpVnpjOWd1QjJjckZwOU1pNjhyWk82aVhJajZ4ZjFMZTgwVGRnbFFtVmIyUGk5TitoejJVYjFGb2VTT1JKdFVnc0dwSDFlamtwbktsYUNOYkozREFKMXdCdWw4YVA1N2ZYTFhYWjZkV3lITGtkSFNocmN0dVJGbXJYY010dXVyZG9kMElQQWh1dWhTZUJlaFhmbmptTFZZcEVDTHc2RSs4bkVoNFpqRHR6M1dReXNqd1p0UzNMY0VucnpHV1B4a1JnVDI0QUFxMVdtM0tzTFpNOStuZTlVL09KaUxMY3RDdk1RbWIvdktzWWttLzFwNlhPM2lCMGxNcDJqQWR0WHg0dE8xR0JKVjRpYWhDSTllUHJweUpKVGtkN0ZwK0t4djdDSGszUHhtY2ZzSkNndzhCazNKc0lPUXBYWTRiVUpUUHJWT0hmYWU4ZUYyWHkyZXhhbDFmbm8xZlc5Sk16Q29HaFZQYlpOZDJ2Sm1WWm1PNFVuejY0VnUxVkhUNlc0ZlVEc0NRajVva28veDljQWxwdDJJbEs3NDI0bUN0OWlFbnBrcGhvcFJoVkQ1eU9adnEyZWlLTXBIYk5TcDhWbHZzUmR6RWlpbDAvSkZDTk5zQ05VR29Ob2taa2JzWlVzTk1LNlBmZ0kzR0RoRHUzUzk5NTZXQ3l0VnVsMGJPSUF4Y1I0YncwTUllam9JUDgrWTEyM2I2RzdNMjZ4M3NDWlFrUzFtVGw0dHlZbjhZUE1Bb0p2bDdtU1VnM3dsWjFUUmNIeDFaUC9ueXIwbVlEempqd3dRd2lIdjUwc2lYVStYYzZhV21JYVEwbEQxQ3BsUVU5ZGt6OHBOek5aUHB3UkxsZ2wvanA3VlhZV2UxT3lReHNCT3cxd1NCQ3ZLenhLcWg0OXh5RWZ4OUpnUE1YTm5CbE5CQytrQXpQZVp5YkhmZW1hK3RXMUFHWlNLMENOdnQxenFTaXRITXVZcjhSSU9kTDZCeHo1UjkrVVRHY1doQlEwNHF2cUJ2a2lTQWF4bCtwaWdoaVNYYlQwMFByT0EydDdicXpQa2JiOWl5enpWanRwdG1iUzFkR3Zjd1lMNUFLbmdHdUg3YUZiSmdmQ2dyL2l3d0FjK3JwbEFPamsyU0ZtMEE5TzdqZWlkdmxkdUVBZkh5dHhvRjFxNk1oQk1xNGEyZFUzelhaOFRPZHl0ZktERUFCUmp3dnRicFlWZ25ldFVaOE1vZDZ2d1NGOElLODg2MHk2c1J0MGtJczRjZGxBa3NxWEpUekVCNFVUNnN0UGRKY3VYd0VoMCtoaHR5M2g0VzlNQW9YZGNNVy91NG95aHJmT1Q1OTVjVTVXVC9PSVZmZGhTVUFqVjZGVExEKzluYWg2MysvKzZhUjRySTNRakZER29Ody9EUll1UG1TQ3YwbGFVTWVwM1o1amFVdW1JMjJsYVVHK0JwcytxSE5uTVhTczNlOHE5d0ZiWS95Mk4wYUFZMzZWblZ4WjlYQWs3TjBjWlRrTGFDRkU4bktlTFFGSmtmdFJ5K2lhUVh1YlBxcXdrQTNoZWFvaWQrYUt0V3lLLzZWcGk1VlRVbTBkMTdrUnUwL3RqRUV5dlNMcnhIckVWTHpYMk14aUZ4dFN3R1FsQU4va3dzTDJlWGs3aUs3V2JUU0xHQTVZaDZORHhhNC9hZitXeHRaMHBWZUZORU9lb2Q3eWdWVVc0d3VERUtTcGxUV0ZlamN1VkcrbzZZWkt0YmV0aUo0akFHcmRNK3VXUXJMWXFaVkl6TkZMSldVZGhid2xXY1BQZXFuU3djQ01GMVordDQwSGZCS2czWVVuT2xNWmxyWDZnMDhxOFk1MkhoV01mdVBGNnk2VHBMbEZrYU5pSGNla1JHdklmZ2xQeTZERUZFdktmN1Zhd2pzUGVraFE5aCtuU3ZBOGN6cG9QUHBNRW1Bc0t4T080MlpVWDhLaTk2bkR2UERZblV3Uk9KTG93dVNQT2RvV21KaDIrYmtTLzlZU25oVXZSMDVYRmhEaFlwMjc3WCtkMVJYQUNMR3hwTVNmQkRDUm02WGhBd0dHWkN0K0pKTlExZ3JlbzRHS1Q0YW9QbEVtazVkc3ViRUNZNzg1d2NtZUw5NjgyTW1ma0h6Y0pGSzdJc3ZINXJHWWFac0Z5dGZCY3Q5UlhpZWQwcUs3NTA3alQ2WVh6RXZTa05oOTRPMkFvUmdnMUdzeWw3OUNrbTRrUnVEUmM2dzZFeWU1ZWs3c2lJMldWSzhzRU5XRi9oK0xaOFlpczdndVdWcEh4c2RpWUdsY2pac2lqTlZsQXdIN1hPeTA5ZWFEUzF6NUZSNG50WFRKQ3g3bmY3bVg2QnRtVS9tZmg0akRMb3QyK1R6Q2EvT2NUQ2EzaTExaDVBVlhWZTVoanA2M05QM1BTQUl6QW16SVdKVzNkWkxuMEs4blZhTGxSMkx4QmxBN1FnYlRqZDFGNU1VTlFmdkxHZm9zdFFjVXlGSHNWK3g4SDdRaEdrZUhydTlNeXdiWUlqaWJET1MzQ2ZJcjUrLzdMNzkwVDRrT2JqN29oZHFuOGlvbUtXNWRNUDNPdGdDbERBeXA2ZW1qZjh5Ynpiak51dTNUWEZaOThUSGpVOGJkYnhiWHFIQXhxa25kdGFmM2ZwT3R5NXVLRHF6MUVHNUtqbUNhUUFzWHNCa2J6Q0RJUEVwWTdjd1Babm9zUT09PC94ZW5jOkNpcGhlclZhbHVlPjwveGVuYzpDaXBoZXJEYXRhPjwveGVuYzpFbmNyeXB0ZWREYXRhPjwvRW5jcnlwdGVkQXNzZXJ0aW9uPjwvc2FtbHA6UmVzcG9uc2U+</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">teamstage.myiuhealth.org</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">SAML/AssertionConsumerService</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.image_parser">true</boolProp>
+          <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
+          <stringProp name="HTTPSampler.concurrentPool">2</stringProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">https://sts.iuhealth.org</stringProp>
+              </elementProp>
+              <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
+                <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="DNT" elementType="Header">
+                <stringProp name="Header.name">DNT</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://sts.iuhealth.org/adfs/ls/IdpInitiatedSignon.aspx?logintorp=https://teamstage.myiuhealth.org&amp;RequestedAuthenticationContext=urn:oasis:names:tc:SAML:2.0:ac:classes:Password&amp;forceauthentication=true&amp;ssoCookie=7ef49003-5bf4-4fd9-9a9d-508a154f7822</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+            <stringProp name="RandomTimer.range">914.4000000000001</stringProp>
+            <stringProp name="ConstantTimer.delay">1828.8000000000002</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://teamstage.myiuhealth.org/news/2017/08/ahaus-to-retire-walke-to-assume-expanded-role" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">teamstage.myiuhealth.org</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">news/2017/08/ahaus-to-retire-walke-to-assume-expanded-role</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.image_parser">true</boolProp>
+          <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
+          <stringProp name="HTTPSampler.concurrentPool">2</stringProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
+                <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="DNT" elementType="Header">
+                <stringProp name="Header.name">DNT</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://sts.iuhealth.org/adfs/ls/IdpInitiatedSignon.aspx?logintorp=https://teamstage.myiuhealth.org&amp;RequestedAuthenticationContext=urn:oasis:names:tc:SAML:2.0:ac:classes:Password&amp;forceauthentication=true&amp;ssoCookie=7ef49003-5bf4-4fd9-9a9d-508a154f7822</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+            <stringProp name="RandomTimer.range">31.200000000000003</stringProp>
+            <stringProp name="ConstantTimer.delay">62.400000000000006</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://teamstage.myiuhealth.org/FrontEnd/Vendor/Trumbowyg/js/ui/icons.svg" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">teamstage.myiuhealth.org</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">FrontEnd/Vendor/Trumbowyg/js/ui/icons.svg</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.image_parser">true</boolProp>
+          <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
+          <stringProp name="HTTPSampler.concurrentPool">2</stringProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/xml, text/xml, */*; q=0.01</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="DNT" elementType="Header">
+                <stringProp name="Header.name">DNT</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://teamstage.myiuhealth.org/news/2017/08/ahaus-to-retire-walke-to-assume-expanded-role</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+            <stringProp name="RandomTimer.range">148.4</stringProp>
+            <stringProp name="ConstantTimer.delay">296.8</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://teamstage.myiuhealth.org/Patient-Care/Diabetes-Centers" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">teamstage.myiuhealth.org</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">Patient-Care/Diabetes-Centers</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.image_parser">true</boolProp>
+          <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
+          <stringProp name="HTTPSampler.concurrentPool">2</stringProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
+                <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="DNT" elementType="Header">
+                <stringProp name="Header.name">DNT</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://teamstage.myiuhealth.org/news/2017/08/ahaus-to-retire-walke-to-assume-expanded-role</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+            <stringProp name="RandomTimer.range">2881.6000000000004</stringProp>
+            <stringProp name="ConstantTimer.delay">5763.200000000001</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://teamstage.myiuhealth.org/Patient-Care/Diabetes-Centers/Diabetes-Support-Groups" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">teamstage.myiuhealth.org</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">Patient-Care/Diabetes-Centers/Diabetes-Support-Groups</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.image_parser">true</boolProp>
+          <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
+          <stringProp name="HTTPSampler.concurrentPool">2</stringProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
+                <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="DNT" elementType="Header">
+                <stringProp name="Header.name">DNT</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://teamstage.myiuhealth.org/Patient-Care/Diabetes-Centers</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+            <stringProp name="RandomTimer.range">2214.4</stringProp>
+            <stringProp name="ConstantTimer.delay">4428.8</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://teamstage.myiuhealth.org/SAML/SLOService" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">teamstage.myiuhealth.org</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">SAML/SLOService</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.image_parser">true</boolProp>
+          <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
+          <stringProp name="HTTPSampler.concurrentPool">2</stringProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
+                <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="DNT" elementType="Header">
+                <stringProp name="Header.name">DNT</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://teamstage.myiuhealth.org/Patient-Care/Diabetes-Centers/Diabetes-Support-Groups</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+            <stringProp name="RandomTimer.range">1856.8000000000002</stringProp>
+            <stringProp name="ConstantTimer.delay">3713.6000000000004</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <ResultCollector guiclass="RespTimeGraphVisualizer" testclass="ResultCollector" testname="Response Time Graph" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>true</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>true</responseData>
+              <samplerData>true</samplerData>
+              <xml>true</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>true</responseHeaders>
+              <requestHeaders>true</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <fileName>true</fileName>
+              <hostname>true</hostname>
+              <threadCounts>true</threadCounts>
+              <sampleCount>true</sampleCount>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename">C:\JMeter\Results\ResponseTimeGraph.csv</stringProp>
+          <stringProp name="RespTimeGraph.graphtitle">Response Time Graph</stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+      <ResultCollector guiclass="GraphVisualizer" testclass="ResultCollector" testname="Graph Results" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename">C:\JMeter\Results\Graph1.csv</stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>true</responseData>
+            <samplerData>true</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>true</responseHeaders>
+            <requestHeaders>true</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename">C:\JMeter\Results\Table1.csv</stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <Summariser guiclass="SummariserGui" testclass="Summariser" testname="Generate Summary Results" enabled="true"/>
+      <hashTree/>
+      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>true</responseData>
+            <samplerData>true</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename">C:\JMeter\Results\HTML Reports\Result1.csv</stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <kg.apc.jmeter.vizualizers.CorrectedResultCollector guiclass="kg.apc.jmeter.vizualizers.TransactionsPerSecondGui" testclass="kg.apc.jmeter.vizualizers.CorrectedResultCollector" testname="jp@gc - Transactions per Second" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>true</responseData>
+            <samplerData>true</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>true</responseHeaders>
+            <requestHeaders>true</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <threadCounts>true</threadCounts>
+            <sampleCount>true</sampleCount>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename">C:\JMeter\Results\Transactions per Second.csv</stringProp>
+        <longProp name="interval_grouping">1000</longProp>
+        <boolProp name="graph_aggregated">false</boolProp>
+        <stringProp name="include_sample_labels"></stringProp>
+        <stringProp name="exclude_sample_labels"></stringProp>
+        <stringProp name="start_offset"></stringProp>
+        <stringProp name="end_offset"></stringProp>
+        <boolProp name="include_checkbox_state">false</boolProp>
+        <boolProp name="exclude_checkbox_state">false</boolProp>
+      </kg.apc.jmeter.vizualizers.CorrectedResultCollector>
+      <hashTree/>
+      <kg.apc.jmeter.vizualizers.CorrectedResultCollector guiclass="kg.apc.jmeter.vizualizers.TimesVsThreadsGui" testclass="kg.apc.jmeter.vizualizers.CorrectedResultCollector" testname="jp@gc - Response Times vs Threads" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>true</responseData>
+            <samplerData>true</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>true</responseHeaders>
+            <requestHeaders>true</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename">C:\JMeter\Results\ResponseTime.csv</stringProp>
+        <longProp name="interval_grouping">500</longProp>
+        <boolProp name="graph_aggregated">false</boolProp>
+        <stringProp name="include_sample_labels"></stringProp>
+        <stringProp name="exclude_sample_labels"></stringProp>
+        <stringProp name="start_offset"></stringProp>
+        <stringProp name="end_offset"></stringProp>
+        <boolProp name="include_checkbox_state">false</boolProp>
+        <boolProp name="exclude_checkbox_state">false</boolProp>
+      </kg.apc.jmeter.vizualizers.CorrectedResultCollector>
+      <hashTree/>
+      <kg.apc.jmeter.vizualizers.CorrectedResultCollector guiclass="kg.apc.jmeter.vizualizers.ThroughputVsThreadsGui" testclass="kg.apc.jmeter.vizualizers.CorrectedResultCollector" testname="jp@gc - Transaction Throughput vs Threads" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>true</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>true</responseData>
+            <samplerData>true</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>true</responseHeaders>
+            <requestHeaders>true</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <fileName>true</fileName>
+            <hostname>true</hostname>
+            <threadCounts>true</threadCounts>
+            <sampleCount>true</sampleCount>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename">C:\JMeter\Results\TransactionThroughputVsThreads.csv</stringProp>
+        <longProp name="interval_grouping">500</longProp>
+        <boolProp name="graph_aggregated">false</boolProp>
+        <stringProp name="include_sample_labels"></stringProp>
+        <stringProp name="exclude_sample_labels"></stringProp>
+        <stringProp name="start_offset"></stringProp>
+        <stringProp name="end_offset"></stringProp>
+        <boolProp name="include_checkbox_state">false</boolProp>
+        <boolProp name="exclude_checkbox_state">false</boolProp>
+      </kg.apc.jmeter.vizualizers.CorrectedResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename">C:\JMeter\Results\AggregateReport.csv</stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+    <WorkBench guiclass="WorkBenchGui" testclass="WorkBench" testname="WorkBench" enabled="true">
+      <boolProp name="WorkBench.save">true</boolProp>
+    </WorkBench>
+    <hashTree/>
+  </hashTree>
+</jmeterTestPlan>
